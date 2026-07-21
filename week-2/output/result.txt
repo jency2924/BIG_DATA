@@ -1,0 +1,4 @@
+Apple	4
+Banana	3
+Mango	1
+Orange	2
