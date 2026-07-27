@@ -319,3 +319,260 @@ Orange   2
 ## Conclusion
 
 The MapReduce Engine Simulation project successfully demonstrates the working principles of the MapReduce programming model. The implementation performs data splitting, mapping, partitioning, sorting, and reducing to generate the final word count output.
+
+
+
+
+
+# Mini Spark RDD Framework using Python
+
+A lightweight implementation of Apache Spark's core concepts using Python. This project demonstrates how **RDD (Resilient Distributed Dataset)** operations, **DAG (Directed Acyclic Graph)** execution, and **lazy evaluation** work internally.
+
+---
+
+## 📌 Project Overview
+
+This project simulates a simplified Spark execution engine capable of:
+
+- Loading CSV datasets
+- Creating RDD objects
+- Applying lazy transformations
+- Building an execution DAG
+- Optimizing the DAG
+- Executing transformations
+- Displaying final results
+
+The sample application filters Amazon product data and returns highly rated Electronics products.
+
+---
+
+## 🚀 Features
+
+- CSV Data Loading
+- RDD Abstraction
+- Lazy Evaluation
+- Directed Acyclic Graph (DAG)
+- Map Transformation
+- Filter Transformation
+- FlatMap Transformation
+- Collect Action
+- Count Action
+- Simple DAG Optimizer
+- Execution Engine
+
+---
+
+## 📂 Project Structure
+
+```
+Project/
+│
+├── Data/
+│   └── amazon.csv
+│
+├── src/
+│   ├── __init__.py
+│   ├── dag.py
+│   ├── executor.py
+│   ├── loader.py
+│   ├── node.py
+│   ├── optimizer.py
+│   ├── parser.py
+│   ├── rdd.py
+│   └── utils.py
+│
+├── main.py
+└── README.md
+```
+
+---
+
+## ⚙️ How It Works
+
+### Step 1
+Load the Amazon dataset from CSV.
+
+### Step 2
+Create an RDD object.
+
+### Step 3
+Apply transformations.
+
+- Filter Electronics products
+- Filter products with rating > 4
+- Map product names
+
+### Step 4
+Build an execution DAG.
+
+### Step 5
+Optimize the DAG.
+
+### Step 6
+Execute the pipeline.
+
+### Step 7
+Display final results.
+
+---
+
+## 🔄 Execution Flow
+
+```
+CSV Dataset
+      │
+      ▼
+Load CSV
+      │
+      ▼
+Create RDD
+      │
+      ▼
+Filter
+      │
+      ▼
+Filter
+      │
+      ▼
+Map
+      │
+      ▼
+Build DAG
+      │
+      ▼
+Optimizer
+      │
+      ▼
+Executor
+      │
+      ▼
+Collect()
+      │
+      ▼
+Display Result
+```
+
+---
+
+## 🧩 Supported Transformations
+
+| Transformation | Description |
+|---------------|-------------|
+| map() | Transforms each record |
+| filter() | Filters records based on a condition |
+| flatMap() | Expands one record into multiple records |
+
+---
+
+## ⚡ Supported Actions
+
+| Action | Description |
+|--------|-------------|
+| collect() | Executes the DAG and returns all results |
+| count() | Returns the total number of records |
+
+---
+
+## 📊 Sample Pipeline
+
+```python
+result = (
+    amazon_rdd
+        .filter(lambda x: "Electronics" in x["category"])
+        .filter(lambda x: float(x["rating"]) > 4)
+        .map(lambda x: x["product_name"])
+        .collect()
+)
+```
+
+---
+
+## 🛠 Technologies Used
+
+- Python 3.x
+- CSV Module
+- Functional Programming
+- Object-Oriented Programming (OOP)
+- Directed Acyclic Graph (DAG)
+
+---
+
+## 📚 Learning Objectives
+
+This project helps understand:
+
+- Apache Spark Architecture
+- RDD Concepts
+- Lazy Evaluation
+- DAG Execution
+- Functional Programming
+- Data Processing Pipelines
+
+---
+
+## ▶️ How to Run
+
+Clone the repository.
+
+```bash
+git clone <repository-url>
+```
+
+Move into the project directory.
+
+```bash
+cd Project
+```
+
+Run the application.
+
+```bash
+python main.py
+```
+
+---
+
+## 📌 Example Output
+
+```
+Before Execution:
+
+Execution DAG
+
+↓ FILTER
+↓ FILTER
+↓ MAP
+
+Optimizer Running...
+
+Final Result
+
+Product A
+Product B
+Product C
+...
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Reduce Transformation
+- GroupBy
+- ReduceByKey
+- Join Operation
+- Parallel Processing
+- Multi-threaded Execution
+- DAG Optimization Rules
+- Partition Support
+- Fault Tolerance
+- Caching Mechanism
+
+---
+
+## 👨‍💻 Author
+
+**Maria Jency**
+
+Bachelor of Computer Applications (BCA)
+
