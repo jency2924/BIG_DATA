@@ -576,3 +576,108 @@ Product C
 
 Bachelor of Computer Applications (BCA)
 
+
+
+
+
+
+
+
+
+## NWE  TASK START
+
+
+Big Data Analytics – Superstore Sales Analysis
+Project Overview
+
+This project performs exploratory data analysis (EDA) on the Sample Superstore dataset using Python. The analysis includes data loading, preprocessing, descriptive statistics, feature engineering, and visualization to understand sales performance across different product categories.
+
+Objectives
+Load and explore the Superstore dataset.
+Perform data cleaning and preprocessing.
+Analyze sales data using descriptive statistics.
+Calculate delivery time for each order.
+Visualize category-wise sales.
+Understand the distribution of sales.
+
+Technologies Used
+Python
+Google Colab
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Dataset
+
+Dataset: samplesuperstore.csv
+
+The dataset contains information about:
+
+Order Date
+Ship Date
+Category
+Sales
+Customer Details
+Product Details
+Shipping Information
+Steps Performed
+1. Import Libraries
+
+Imported the required Python libraries:
+
+Pandas
+NumPy
+Matplotlib
+Seaborn
+2. Load Dataset
+
+Loaded the Superstore dataset into a Pandas DataFrame.
+
+3. Data Exploration
+Displayed first five records
+Checked dataset information
+Generated descriptive statistics
+4. Data Preprocessing
+Converted Order Date and Ship Date into datetime format.
+Created a new column:
+Delivery Days = Ship Date − Order Date
+5. Data Validation
+Checked missing values.
+Displayed unique product categories.
+6. Data Analysis
+
+Calculated total sales for each product category using GroupBy.
+
+7. Data Visualization
+
+Generated:
+
+Bar Chart showing Sales by Category
+Histogram showing Sales Distribution
+Output
+
+The project provides:
+
+Dataset summary
+Missing value analysis
+Delivery days calculation
+Category-wise total sales
+Sales distribution visualization
+Learning Outcomes
+
+After completing this project, you will be able to:
+
+Work with real-world datasets.
+Perform data preprocessing.
+Apply exploratory data analysis (EDA).
+Create meaningful visualizations.
+Extract business insights from sales data.
+Future Enhancements
+Regional sales analysis
+Profit analysis
+Customer segmentation
+Monthly and yearly sales trends
+Interactive dashboard using Power BI or Tableau
+Conclusion
+
+This project demonstrates the fundamentals of Big Data Analytics using Python by analyzing the Sample Superstore dataset. It helps understand sales patterns, delivery performance, and category-wise business insights through statistical analysis and visualizations.
