@@ -681,3 +681,180 @@ Interactive dashboard using Power BI or Tableau
 Conclusion
 
 This project demonstrates the fundamentals of Big Data Analytics using Python by analyzing the Sample Superstore dataset. It helps understand sales patterns, delivery performance, and category-wise business insights through statistical analysis and visualizations.
+
+
+
+# Task 2 – Big Data Analysis
+
+## 📌 Project Overview
+
+This project focuses on performing **data analysis and exploratory data visualization** using the **Sample Superstore dataset**.
+
+The main objective is to understand sales, profit, discount, delivery time, category-wise performance, and relationships between numerical variables using Python and popular data analysis libraries.
+
+## 🎯 Objectives
+
+* Load and inspect the Superstore dataset.
+* Perform basic data preprocessing.
+* Convert date columns into proper datetime format.
+* Calculate delivery time in days.
+* Check for missing values.
+* Analyze sales and profit by category.
+* Study the distribution of sales and profit.
+* Analyze the relationship between discount and profit.
+* Generate a correlation matrix and heatmap.
+* Visualize important business insights using graphs.
+
+## 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Google Colab
+* Jupyter Notebook
+
+## 📂 Dataset
+
+**Dataset:** Sample Superstore Dataset
+
+The dataset contains business transaction information such as:
+
+* Order Date
+* Ship Date
+* Category
+* Sales
+* Profit
+* Discount
+* Other numerical and categorical attributes
+
+## 🔄 Data Preprocessing
+
+The following preprocessing steps were performed:
+
+1. Imported the required Python libraries.
+2. Loaded the CSV dataset using Pandas.
+3. Inspected the dataset using `df.info()` and `df.describe()`.
+4. Converted **Order Date** and **Ship Date** into datetime format.
+5. Calculated **Delivery Days** using the difference between shipping and order dates.
+6. Checked unique values in the Category column.
+7. Checked for missing values.
+
+## 📊 Exploratory Data Analysis
+
+### 1. Sales by Category
+
+Total sales were calculated by grouping the data based on **Category**.
+
+A bar chart was used to visualize the total sales for each category.
+
+### 2. Sales Distribution
+
+A histogram was created to understand the distribution of sales values across the dataset.
+
+### 3. Profit by Category
+
+A bar plot was created to compare profit across different product categories.
+
+### 4. Sales Distribution by Category
+
+A category-wise bar plot was used to visualize sales across different categories.
+
+### 5. Profit Distribution
+
+A box plot was used to study the overall distribution and variation of profit.
+
+### 6. Profit Variation Across Categories
+
+A category-wise box plot was created to understand the variation of profit between categories.
+
+### 7. Impact of Discount on Profit
+
+A scatter plot was used to analyze the relationship between **Discount** and **Profit**.
+
+### 8. Correlation Analysis
+
+Numerical columns were selected and a correlation matrix was calculated.
+
+A heatmap was then generated to visualize the correlations between numerical variables.
+
+## 📈 Visualizations
+
+The project includes the following visualizations:
+
+* Sales by Category
+* Sales Distribution Histogram
+* Profit by Category
+* Sales Distribution by Category
+* Profit Distribution Box Plot
+* Profit Variation Across Categories
+* Discount vs Profit Scatter Plot
+* Correlation Heatmap
+
+## 🔍 Key Analysis Areas
+
+The analysis focuses on:
+
+**Sales Analysis**
+
+* Category-wise sales performance
+* Overall sales distribution
+
+**Profit Analysis**
+
+* Category-wise profit
+* Profit variation and distribution
+
+**Discount Analysis**
+
+* Relationship between discount and profit
+
+**Delivery Analysis**
+
+* Number of days between order and shipping
+
+**Correlation Analysis**
+
+* Relationships among numerical variables
+
+## 📁 Project Structure
+
+```text
+Task-2-BD/
+│
+├── Task_2_BD.ipynb
+├── task_2_bd.py
+└── README.md
+```
+
+## ▶️ How to Run
+
+### Using Google Colab
+
+1. Open `Task_2_BD.ipynb`.
+2. Upload the Sample Superstore CSV dataset.
+3. Update the dataset path if required.
+4. Run all cells sequentially.
+
+### Using Jupyter Notebook
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+Then open:
+
+```text
+Task_2_BD.ipynb
+```
+
+and execute the cells.
+
+## ✅ Conclusion
+
+This project demonstrates the use of **Python-based data analysis and visualization techniques** on the Sample Superstore dataset. The analysis helps understand sales, profit, discount, delivery time, category performance, and correlations between numerical variables.
+
+The project provides a basic foundation for performing **Exploratory Data Analysis (EDA)** and extracting useful insights from business data.
